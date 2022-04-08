@@ -1,0 +1,22 @@
+<template>
+   <lightning-card  title="Subscribe Component">
+        <p class="slds-p-around_medium" style="font-size:25px">
+        </p>
+
+    <div class="slds-m-around_medium">
+        <lightning-datatable key-field="Id"
+          data={accData}
+          columns={columnTable}
+          onsave={saveHandleAction}
+          draft-values={fldsItemValues}
+          hide-checkbox-column
+          show-row-number-column>
+         </lightning-datatable>
+     
+      </div>
+  </lightning-card>
+
+</template>
+
+
+
